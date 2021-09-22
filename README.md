@@ -2,8 +2,8 @@
 Data Science Test for Junior position
 
 ## Instructions
-- This test includes 3 tasks, it is not necessarely expected from you to complete all the tasks
-- You time limit is **xxx h and xxx min**.
+- This test includes 3 tasks, it is not necessarily expected from you to complete all the tasks
+- You time limit is **1 h and 30 min**.
 - Results should be provided as a R or Python script. You can also provide a Rmarkdown or Jupyter notebook.
 
 ### Note
@@ -31,7 +31,7 @@ Note that the analysis should be carried out in Singapore Time (SGT = UTC+8)
 ### Task 1 - Astronomical tide
 1. Read the file _astronomicalTide.csv_: this file contains 2 columns, the time and the tide value. Time is expressed in UTC. 
 2. Plot the astronomical tide according to time.
-3. Can you extract some pattern on the astronomical tide?
+<!--- 3. Can you extract some pattern on the astronomical tide? --->
 
 ### Task 2 - Observed tide
 1. Read the file _observedTide.csv_: this file contains 2 columns, the time and the tide value. Time is already expressed in SGT
@@ -41,9 +41,13 @@ You can either use linear interpolation to fill the gap between 1 and 5 minutes 
 4. What is the correlation between the astromical and the observed tide? Use this relationship to fill the missing data?
 
 ### Task 3 - Forecast
-Build a function that will forecast the *observed tide* for the next 2 hours, using as input:
+1. Split the dataset into 3 parts:
+- the first subset should contains the data until August 30<sup>th</sup> 2017 (included)
+- the second subset should contains the astronomical tide for August 31<sup>st</sup> 2017
+- the last subset should contains the observed tide for August 31<sup>st</sup> 2017
+2. Build a function that will forecast the *observed tide* for the next 2 hours, using as input:
 - the past *observed tide* 
 - the past *astromical tide*
 - the *astronomical tide* over the next two hours.
-There is no contrains on the selection of historical data. The forecast however is constrained to 2 hours and should preferably (not mandatory) provide a value every 5 minutes 
-(forecasted value for the next 5 minutes, 10 minutes, ..., 120 minutes)
+There is no contraints on the selection of historical data. The forecast however is constrained to 2 hours and should preferably (not mandatory) provide a value every 5 minutes 
+(forecasted value for the next 5 minutes, 10 minutes, ..., 120 minutes). Use the last dataset (built in task 1) to test the accuracy of your forecast.
