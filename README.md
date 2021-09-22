@@ -46,9 +46,7 @@ Split the dataset into 3 parts:
 - the second subset should contains the astronomical tide for August 31<sup>st</sup> 2017
 - the last subset should contains the observed tide for August 31<sup>st</sup> 2017
 
-Build a function that will forecast the *observed tide* for the next 2 hours, using as input:
-- the past *observed tide* 
-- the past *astromical tide*
-- the *astronomical tide* over the next two hours.
+Build a function that will forecast the *observed tide* for the next 2 hours, using as input: the past *observed tide*, the past *astromical tide* and the *astronomical tide* over the next two hours.
+
 There is no contraints on the selection of historical data. The forecast however is constrained to 2 hours and should preferably (not mandatory) provide a value every 5 minutes 
 (forecasted value for the next 5 minutes, 10 minutes, ..., 120 minutes). Use the last dataset (built in task 1) to test the accuracy of your forecast.
