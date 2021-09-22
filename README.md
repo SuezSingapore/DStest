@@ -41,11 +41,12 @@ You can either use linear interpolation to fill the gap between 1 and 5 minutes 
 4. What is the correlation between the astromical and the observed tide? Use this relationship to fill the missing data?
 
 ### Task 3 - Forecast
-1. Split the dataset into 3 parts:
+Split the dataset into 3 parts:
 - the first subset should contains the data until August 30<sup>th</sup> 2017 (included)
 - the second subset should contains the astronomical tide for August 31<sup>st</sup> 2017
 - the last subset should contains the observed tide for August 31<sup>st</sup> 2017
-2. Build a function that will forecast the *observed tide* for the next 2 hours, using as input:
+
+Build a function that will forecast the *observed tide* for the next 2 hours, using as input:
 - the past *observed tide* 
 - the past *astromical tide*
 - the *astronomical tide* over the next two hours.
